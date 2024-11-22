@@ -1,0 +1,8 @@
+11/22/2024 21:36:06 - DEBUG - urllib3.connectionpool -   Starting new HTTPS connection (1): 85.202.160.193:9200
+11/22/2024 21:36:06 - DEBUG - urllib3.connectionpool -   https://85.202.160.193:9200 "HEAD / HTTP/11" 200 0
+11/22/2024 21:36:06 - INFO - elastic_transport.transport -   HEAD https://85.202.160.193:9200/ [status:200 duration:0.070s]
+11/22/2024 21:36:06 - INFO - elasticsearch -   Connected to Elastic
+11/22/2024 21:36:20 - DEBUG - urllib3.connectionpool -   Starting new HTTPS connection (1): 85.202.160.193:9200
+11/22/2024 21:36:20 - DEBUG - urllib3.connectionpool -   https://85.202.160.193:9200 "HEAD / HTTP/11" 200 0
+11/22/2024 21:36:20 - INFO - elastic_transport.transport -   HEAD https://85.202.160.193:9200/ [status:200 duration:0.010s]
+11/22/2024 21:36:20 - INFO - elasticsearch -   Connected to Elastic
