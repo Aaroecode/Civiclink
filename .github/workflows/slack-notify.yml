@@ -14,7 +14,7 @@ jobs:
       - name: Post message to Slack
         uses: rtCamp/action-slack-notify@v2.2.0
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_MESSAGE: |
             :rocket: A new commit has been pushed to the main branch!
             *Repository*: ${{ github.repository }}
