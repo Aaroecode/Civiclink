@@ -1,0 +1,74 @@
+{
+    "Damaged Road": {
+        "en": "Damaged Road"
+    },
+    "Drainage Problem": {
+        "en": "Drainage Problem"
+    },
+    "Pothole": {
+        "en": "Pothole"
+    },
+    "Please Select Your Issue": {
+        "en": "Please Select Your Issue"
+    },
+    "Please share an image with us": {
+        "en": "Please share an image with us"
+    },
+    "Please wait until we process your image": {
+        "en": "Please wait until we process your image"
+    },
+    "Please share your location with us": {
+        "en": "Please share your location with us"
+    },
+    "Your ticket has been recorded": {
+        "en": "Your ticket has been recorded"
+    },
+    "You have exceeded the rate limit. Please wait for a 1 day before sending another message.": {
+        "en": "You have exceeded the rate limit. Please wait for a 1 day before sending another message."
+    },
+    "Invalid Interaction": {
+        "en": "Invalid Interaction"
+    },
+    "Hello!\ud83d\udc4b \n Welcome to *Civiclink*, Your road reporting assistant.\ud83d\udea7\n We're here to help you report road issues directly to the relevant government authorities. Here's how you can use this service:\n 1\ufe0f\u20e3 Click on _Report Issue_\n2\ufe0f\u20e3 Share Image with us.\n3\ufe0f\u20e3 Select Issue Type\n4\ufe0f\u20e3Share your location\n Your reports will contribute to safer and better roads for everyone!": {
+        "en": "Hello!\ud83d\udc4b\nWelcome to *Civiclink*, Your road reporting assistant.\ud83d\udea7\nWe're here to help you report road issues directly to the relevant government authorities. Here's how you can use this service:\n1\ufe0f\u20e3 Click on _Report Issue_\n2\ufe0f\u20e3 Share Image with us.\n3\ufe0f\u20e3 Select Issue Type\n4\ufe0f\u20e3Share your location\nYour reports will contribute to safer and better roads for everyone!"
+    },
+    "Report Issue": {
+        "en": "Report Issue"
+    },
+    "Change Language": {
+        "en": "Change Language"
+    },
+    "Please share image of the issue with us": {
+        "en": "Please share image of the issue with us"
+    },
+    "Select Issue": {
+        "en": "Select Issue"
+    },
+    "Issues": {
+        "en": "Issues"
+    },
+    "Please share location with us!": {
+        "en": "Please share location with us!"
+    },
+    "Your ticket has been recorded\n Your ticket id is cc51f7ff-b28c-4ab9-968f-3c37ba28bfb0": {
+        "en": "Your ticket has been recorded\nYour ticket id is cc51f7ff-b28c-4ab9-968f-3c37ba28bfb0"
+    },
+    "Your ticket has been recorded\n Your ticket id is 42434839-10e6-4234-a0a5-7eab2146e607": {
+        "hi": "\u0906\u092a\u0915\u093e \u091f\u093f\u0915\u091f \u0926\u0930\u094d\u091c \u0915\u093f\u092f\u093e \u0917\u092f\u093e \u0939\u0948\n\u0906\u092a\u0915\u093e \u091f\u093f\u0915\u091f \u0906\u0908\u0921\u0940 42434839-10E6-4234-A0A5-7EAB2146E607 \u0939\u0948"
+    },
+    "Your ticket has been recorded\n Your ticket id is 5e067bc2-d291-4fdd-8319-7ffbc47177ea": {
+        "en": "Your ticket has been recorded\nYour ticket id is 5e067bc2-d291-4fdd-8319-7ffbc47177ea"
+    },
+    "Hello!\ud83d\udc4b \n Welcome to *Civiclink*, Your road issue reporting assistant.\ud83d\udea7\nHere's how you can use this service:\n 1\ufe0f\u20e3 Click on _Report Issue_\n2\ufe0f\u20e3 Share Image with us.\n3\ufe0f\u20e3 Share your location\n Your reports will contribute to safer and better roads for everyone!": {
+        "en": "Hello!\ud83d\udc4b\nWelcome to *Civiclink*, Your road issue reporting assistant.\ud83d\udea7\nHere's how you can use this service:\n1\ufe0f\u20e3 Click on _Report Issue_\n2\ufe0f\u20e3 Share Image with us.\n3\ufe0f\u20e3 Share your location\nYour reports will contribute to safer and better roads for everyone!"
+    },
+    "Click and share image!": {
+        "en": "Click and share image!"
+    },
+    "Your ticket has been recorded\n Your ticket id is 7ad169a2-f2a6-4b74-a7e7-1f0239d51a5e": {
+        "en": "Your ticket has been recorded\nYour ticket id is 7ad169a2-f2a6-4b74-a7e7-1f0239d51a5e"
+    },
+    "Your ticket has been recorded\n Your ticket id is: 2092799e-e1da-4b65-a352-53a5b7757395": {
+        "en": "Your ticket has been recorded\nYour ticket id is: 2092799e-e1da-4b65-a352-53a5b7757395"
+    }
+}
