@@ -12,7 +12,13 @@ INDEX_NAME = "tickets"
 load_dotenv()
 
 cert_path = os.path.join(os.getcwd(), "database", "http_ca.crt")
-elastic = Elasticsearch(hosts="https://127.0.0.1:9200", http_auth=("elastic", "i5rTHL8FwoMCP65-I7Vn"),verify_certs=True, ca_certs=cert_path)
+# Initialize Elasticsearch client with credentials from environment
+elastic = Elasticsearch(
+    hosts="https://127.0.0.1:9200", 
+    http_auth=("elastic", os.getenv("ELASTIC_PASSWORD")),
+    verify_certs=True, 
+    ca_certs=cert_path
+)
 
 router = APIRouter()
 

@@ -12,13 +12,15 @@ env_path = os.path.join(os.getcwd(), ".env")
 load_dotenv(env_path)
 print(os.getenv("OPENAI_API_KEY"))
 
-client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Initialize OpenAI client for analyzing issue images
+openai_client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 app = FastAPI()
 
 
 
 class WhatsAppMessage:
+    """Parses raw WhatsApp webhook payloads into a structured object."""
     def __init__(self, payload):
         # Initialize attributes with default values
         self.id = None
@@ -83,6 +85,7 @@ class WhatsAppMessage:
 
 
 class WaEngine:
+    """Utility class to interact with the WhatsApp Cloud API for sending/receiving messages."""
     def __init__(self, access_token: str, phone_number_id: str, log_file: str = "message_log.json"):
         self.access_token = access_token
         self.phone_number_id = phone_number_id
@@ -284,8 +287,8 @@ class WaEngine:
         except Exception as e:
             print(f"Error in encoding image: {str(e)}") 
 
-        # Send the API request
-        response = client.chat.completions.create(
+        # Send the API request to OpenAI for road issue detection
+        response = openai_client.chat.completions.create(
           model=model,
           messages=[
             {

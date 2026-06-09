@@ -3,9 +3,10 @@ from utils.session_manager import SessionManager
 from utils.logging import global_logger
 from utils import errors
 
-session = SessionManager()
+session_manager_instance = SessionManager()
 
 class ChatFlow:
+    """Manages the state machine and progression of the WhatsApp chat interaction flow."""
 
     def __init__(self, session_manager: SessionManager):
         self.current_step = 'start'
@@ -33,4 +34,4 @@ class ChatFlow:
             raise errors.MissingStep(f"Step for user {user_id} not found")
 
 
-chat_flow = ChatFlow(session)
+chat_flow = ChatFlow(session_manager_instance)

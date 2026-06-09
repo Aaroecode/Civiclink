@@ -5,6 +5,7 @@ uuid_file =  os.path.join(os.getcwd(), "database", "uuids.json")
 
 cert_path = os.path.join(os.getcwd(), "database", "http_ca.crt")
 class Elastic(Elasticsearch):
+    """Wrapper class over Elasticsearch client to simplify index operations and UUID generation."""
     def __init__(self, host, username: str, password:str) -> None:
         super().__init__(hosts=[host], http_auth=(username, password), verify_certs=True, ca_certs=cert_path)
         if self.ping():

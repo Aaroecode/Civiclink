@@ -21,18 +21,25 @@ def verify(hub_mode: str = Query(None, alias="hub.mode"),
 
 @router.post("/")
 async def webhook(data: WebhookPayload):
-    payload = {
+    # Construct the base message data from the incoming payload
+    message_data = {
         "object": data.object,
         "entry": data.entry
     }
     
-    inbound_payload_logger.info(payload)
-    payload = WhatsAppMessage(payload)
-    if not payload.author_id:
+    inbound_payload_logger.info(message_data)
+    
+    # Parse the incoming message data into a structured WhatsAppMessage object
+    whatsapp_message = WhatsAppMessage(message_data)
+    
+    # If there's no author_id, it's not a user message (e.g., status update)
+    if not whatsapp_message.author_id:
         return {"status": "success"}
+        
     try:
-        step = chat_flow.next_step(payload.author_id, payload)
-        global_logger.info(f"Moving to step: {step} for user: {payload.author_id}")
+        # Route the parsed message through the chat flow state machine
+        step = chat_flow.next_step(whatsapp_message.author_id, whatsapp_message)
+        global_logger.info(f"Moving to step: {step} for user: {whatsapp_message.author_id}")
     except Exception as e:
         global_logger.error(e)
     return {"status": "success"}
